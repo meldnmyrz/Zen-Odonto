@@ -1,0 +1,9 @@
+{
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/tratamientos", "destination": "/tratamientos.html" },
+    { "source": "/casos-clinicos", "destination": "/casos-clinicos.html" },
+    { "source": "/citas", "destination": "/citas-contacto.html" },
+    { "source": "/contacto", "destination": "/citas-contacto.html" }
+  ]
+}
