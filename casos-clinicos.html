@@ -91,33 +91,34 @@
     </div>
   </aside>
 
-  <!-- PAGE BANNER CON VIDEO ZEN ODONTO 3 -->
-  <section class="page-banner-video">
-    <div class="container banner-video-grid">
-      <div class="page-banner-content">
-        <span class="zen-badge badge-dark">Evidencia Clínica & Alta Tecnología</span>
-        <h1 class="heading-xl">
-          CASOS CLÍNICOS & <span class="title-mint">TECNOLOGÍA</span>
-        </h1>
-        <p>
-          Resultados visibles documentados con el máximo rigor clínico. Conoce en video nuestros procedimientos de blanqueamiento acelerado con lámpara Philips Zoom!® y acabado botánico Mint Fresh.
-        </p>
-        <div style="margin-top: 24px; display: flex; gap: 12px; flex-wrap: wrap;">
-          <a href="#baSliderContainer" class="btn btn-mint">Ver Comparador Antes/Después ↓</a>
-          <a href="citas-contacto.html" class="btn btn-outline" style="color: #FFF; border-color: rgba(255,255,255,0.3);">Agendar Valoración</a>
-        </div>
-      </div>
-      <div class="banner-video-container">
-        <div class="video-live-tag">
-          <span class="video-live-dot"></span>
-          <span>TECNOLOGÍA PHILIPS ZOOM!®</span>
-        </div>
-        <video autoplay muted loop playsinline controls poster="assets/images/zoom-mint-lamp.jpg">
-          <source src="assets/videos/zen-odonto-3.mp4" type="video/mp4">
-          Tu navegador no soporta reproducción de video.
-        </video>
+  <!-- FULL-SCREEN VIDEO HERO HEADER (VIDEO ZEN ODONTO 3) -->
+  <section class="full-video-hero">
+    <video class="full-video-hero-bg" autoplay muted loop playsinline poster="assets/images/zoom-mint-lamp.jpg" id="heroVideo3">
+      <source src="assets/videos/zen-odonto-3.mp4" type="video/mp4">
+      Tu navegador no soporta reproducción de video.
+    </video>
+    <div class="full-video-hero-overlay"></div>
+    <div class="full-video-hero-content">
+      <span class="zen-badge badge-dark">Evidencia Clínica & Alta Tecnología</span>
+      <h1 class="heading-xl">
+        CASOS CLÍNICOS & <span class="title-mint">TECNOLOGÍA</span>
+      </h1>
+      <p>
+        Resultados visibles documentados con el máximo rigor clínico. Conoce nuestros procedimientos de blanqueamiento acelerado con lámpara Philips Zoom!® y acabado botánico Mint Fresh.
+      </p>
+      <div class="full-video-cta-group">
+        <a href="#baSliderContainer" class="btn btn-mint">
+          <span>Ver Comparador Antes/Después ↓</span>
+        </a>
+        <a href="citas-contacto.html" class="btn btn-outline" style="color: #FFF; border-color: rgba(255,255,255,0.4); background: rgba(18,24,27,0.4); backdrop-filter: blur(8px);">
+          <span>Agendar Valoración</span>
+        </a>
       </div>
     </div>
+    <button class="video-audio-floating-btn" onclick="toggleHeroMute('heroVideo3', this)">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 5L6 9H2v6h4l5 4V5z"/><line x1="23" y1="9" x2="17" y2="15"/><line x1="17" y1="9" x2="23" y2="15"/></svg>
+      <span>Activar Audio Video</span>
+    </button>
   </section>
 
   <!-- SECCIÓN INTERACTIVA ANTES / DESPUÉS -->

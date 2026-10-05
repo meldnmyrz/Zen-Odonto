@@ -91,33 +91,34 @@
     </div>
   </aside>
 
-  <!-- PAGE BANNER CON VIDEO ZEN ODONTO 2 -->
-  <section class="page-banner-video">
-    <div class="container banner-video-grid">
-      <div class="page-banner-content">
-        <span class="zen-badge badge-dark">Atención Personalizada</span>
-        <h1 class="heading-xl">
-          DIAGNÓSTICO VIRTUAL & <span class="title-mint">CITAS</span>
-        </h1>
-        <p>
-          Da el primer paso hacia una sonrisa en armonía. Conoce la experiencia clínica en Costera 125, realiza nuestro cuestionario virtual o reserva tu horario en pocos clics.
-        </p>
-        <div style="margin-top: 24px; display: flex; gap: 12px; flex-wrap: wrap;">
-          <a href="#zenBookingForm" class="btn btn-mint">Ir al Formulario de Cita ↓</a>
-          <a href="tel:7445060571" class="btn btn-outline" style="color: #FFF; border-color: rgba(255,255,255,0.3);">Llamar: 744 506 0571</a>
-        </div>
-      </div>
-      <div class="banner-video-container">
-        <div class="video-live-tag">
-          <span class="video-live-dot"></span>
-          <span>EXPERIENCIA ZEN ODONTO</span>
-        </div>
-        <video autoplay muted loop playsinline controls poster="assets/images/reception-desk.jpg">
-          <source src="assets/videos/zen-odonto-2.mp4" type="video/mp4">
-          Tu navegador no soporta reproducción de video.
-        </video>
+  <!-- FULL-SCREEN VIDEO HERO HEADER (VIDEO ZEN ODONTO 2) -->
+  <section class="full-video-hero">
+    <video class="full-video-hero-bg" autoplay muted loop playsinline poster="assets/images/reception-desk.jpg" id="heroVideo2">
+      <source src="assets/videos/zen-odonto-2.mp4" type="video/mp4">
+      Tu navegador no soporta reproducción de video.
+    </video>
+    <div class="full-video-hero-overlay"></div>
+    <div class="full-video-hero-content">
+      <span class="zen-badge badge-dark">Atención Personalizada</span>
+      <h1 class="heading-xl">
+        DIAGNÓSTICO VIRTUAL & <span class="title-mint">CITAS</span>
+      </h1>
+      <p>
+        Da el primer paso hacia una sonrisa en armonía. Conoce la experiencia clínica en Costera 125, realiza nuestro cuestionario virtual en 60 segundos o reserva tu horario preferido.
+      </p>
+      <div class="full-video-cta-group">
+        <a href="#zenBookingForm" class="btn btn-mint">
+          <span>Ir al Formulario de Cita ↓</span>
+        </a>
+        <a href="tel:7445060571" class="btn btn-outline" style="color: #FFF; border-color: rgba(255,255,255,0.4); background: rgba(18,24,27,0.4); backdrop-filter: blur(8px);">
+          <span>Llamar: 744 506 0571</span>
+        </a>
       </div>
     </div>
+    <button class="video-audio-floating-btn" onclick="toggleHeroMute('heroVideo2', this)">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 5L6 9H2v6h4l5 4V5z"/><line x1="23" y1="9" x2="17" y2="15"/><line x1="17" y1="9" x2="23" y2="15"/></svg>
+      <span>Activar Audio Video</span>
+    </button>
   </section>
 
   <!-- 1. EVALUADOR DE SONRISA VIRTUAL (SMILE QUIZ) -->
