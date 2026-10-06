@@ -513,7 +513,7 @@ h1, h2, h3, h4 {
   overflow: hidden;
 }
 
-/* Fullscreen Hero Background for Home */
+/* Fullscreen Hero Background for Home (Luminous Clean Luxury Aesthetic) */
 .hero-fullscreen-bg {
   position: relative;
   min-height: calc(100vh - 80px);
@@ -523,7 +523,7 @@ h1, h2, h3, h4 {
   align-items: center;
   padding: 80px 0;
   overflow: hidden;
-  background: var(--pro-black);
+  background: #FCFBF7;
 }
 
 .hero-bg-media {
@@ -539,7 +539,7 @@ h1, h2, h3, h4 {
   height: 100%;
   object-fit: cover;
   object-position: center right;
-  filter: brightness(0.92);
+  filter: contrast(1.02) brightness(1.02);
 }
 
 .hero-bg-overlay {
@@ -547,10 +547,10 @@ h1, h2, h3, h4 {
   inset: 0;
   background: linear-gradient(
     90deg,
-    rgba(18, 24, 27, 0.94) 0%,
-    rgba(18, 24, 27, 0.8) 42%,
-    rgba(18, 24, 27, 0.45) 75%,
-    rgba(18, 24, 27, 0.25) 100%
+    rgba(252, 251, 247, 0.97) 0%,
+    rgba(252, 251, 247, 0.92) 42%,
+    rgba(252, 251, 247, 0.55) 70%,
+    rgba(252, 251, 247, 0.15) 100%
   );
   z-index: 2;
 }
@@ -565,61 +565,52 @@ h1, h2, h3, h4 {
   max-width: 660px;
 }
 
-.hero-title-white {
-  color: #FFFFFF;
-  text-shadow: 0 4px 18px rgba(0, 0, 0, 0.6);
+.hero-title-light {
   line-height: 1.1;
   margin-bottom: 20px;
 }
 
-.hero-description-white {
+.hero-title-light .title-mint {
+  color: #1F926B;
+}
+
+.hero-title-light .title-gold {
+  color: #B58826;
+}
+
+.hero-description-light {
   font-size: 1.18rem;
-  color: rgba(255, 255, 255, 0.9);
+  color: #2D3748;
   line-height: 1.7;
   margin-bottom: 32px;
-  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
 }
 
-.btn-outline-white {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  padding: 14px 28px;
-  border-radius: var(--radius-pill);
-  font-weight: 600;
-  font-size: 0.95rem;
-  border: 1.5px solid rgba(255, 255, 255, 0.45);
-  color: #FFFFFF;
-  background: rgba(18, 24, 27, 0.45);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  transition: var(--transition);
+.hero-description-light strong {
+  color: #12181B;
 }
 
-.btn-outline-white:hover {
-  background: rgba(255, 255, 255, 0.15);
-  border-color: #FFFFFF;
-  color: #FFFFFF;
-  transform: translateY(-2px);
-}
-
-.hero-stats-glass {
-  background: rgba(18, 24, 27, 0.65);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  border: 1px solid rgba(98, 196, 158, 0.35);
+.hero-stats-glass-light {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1.5px solid rgba(98, 196, 158, 0.35);
   border-radius: var(--radius-md);
-  padding: 20px 24px;
+  padding: 22px 26px;
   max-width: 580px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
 
-.hero-stats-glass .stat-label {
-  color: rgba(255, 255, 255, 0.8);
+.hero-stats-glass-light .stat-num {
+  font-size: 1.85rem;
+  font-weight: 800;
+  line-height: 1;
 }
 
-.text-white {
-  color: #FFFFFF !important;
+.hero-stats-glass-light .stat-label {
+  color: #4A5568;
+  font-size: 0.82rem;
+  font-weight: 500;
+  margin-top: 4px;
 }
 
 @media (max-width: 768px) {
@@ -630,11 +621,11 @@ h1, h2, h3, h4 {
   .hero-bg-overlay {
     background: linear-gradient(
       180deg,
-      rgba(18, 24, 27, 0.88) 0%,
-      rgba(18, 24, 27, 0.92) 100%
+      rgba(252, 251, 247, 0.94) 0%,
+      rgba(252, 251, 247, 0.96) 100%
     );
   }
-  .hero-stats-glass {
+  .hero-stats-glass-light {
     grid-template-columns: 1fr;
     gap: 16px;
   }
